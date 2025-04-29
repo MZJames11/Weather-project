@@ -1,9 +1,0 @@
-Prompt 1: Create a simple dynamic weather webpage using the MVC pattern. The webpage should:
-- Allow users to input a city name and click a button to get the weather.
-- Use OpenWeatherMap API to fetch current weather data.
-- Structure code into 5 files: index.html, style.css, model.js, view.js, and controller.js.
-- No classes or constructors; create all objects as constants.
-- All event handlers must be attached in HTML using attributes (e.g., onclick="functionName()").
-- Include an additional feature: allow users to toggle between Celsius and Fahrenheit.
-- Dynamically change the background color based on the weather condition (e.g., sunny, rainy, cloudy).
-- Add a tooltip when hovering over the weather icon.
