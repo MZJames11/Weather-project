@@ -96,6 +96,8 @@ input, button {
     font-size: 1em;
     user-select: none;
     animation: snowFall linear infinite;
+    z-index: 9999;
+    pointer-events: none;
 }
 
 @keyframes snowFall {
