@@ -80,4 +80,21 @@ const view = {
     },
 
     generateSnow() {
-        for (let i =
+        for (let i = 0; i < 80; i++) {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            snowflake.textContent = '❄️';
+            snowflake.style.left = Math.random() * window.innerWidth + 'px';
+            snowflake.style.animationDuration = (Math.random() * 2 + 2) + 's';
+            document.body.appendChild(snowflake);
+        }
+    },
+
+    showError(message) {
+        document.getElementById('errorMessage').textContent = message;
+    },
+
+    clearError() {
+        document.getElementById('errorMessage').textContent = '';
+    }
+};
