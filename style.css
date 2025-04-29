@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: lightblue;
+    transition: background-color 0.5s ease;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+}
+
+#loading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#errorMessage {
+    margin-top: 10px;
+}
+
+/* 动态背景渐变 */
+.dynamic-bg {
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* 天气特定背景 */
+.sunny {
+    background: linear-gradient(270deg, #87CEEB, #FFD700);
+}
+
+.cloudy {
+    background: linear-gradient(270deg, #B0C4DE, #708090);
+}
+
+.rainy {
+    background: #778899;
+    overflow: hidden;
+}
+
+.snowy {
+    background: #f0f8ff;
+    overflow: hidden;
+}
+
+.misty {
+    background: #d3d3d3;
+}
+
+/* 小雨滴动画 */
+.raindrop {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: blue;
+    opacity: 0.5;
+    animation: rainFall linear infinite;
+}
+
+@keyframes rainFall {
+    0% {top: -10px;}
+    100% {top: 100vh;}
+}
+
+/* 小雪花动画 */
+.snowflake {
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    user-select: none;
+    animation: snowFall linear infinite;
+}
+
+@keyframes snowFall {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(100vh);}
+}
